@@ -1,4 +1,4 @@
-package Model;
+package com.sam.eventhall.Model;
 
 // used to automatically create getters and setters
 import lombok.Data;

@@ -1,7 +1,7 @@
-package Repository;
+package com.sam.eventhall.Repository;
 
 // Imports the Entity for User
-import Model.User;
+import com.sam.eventhall.Model.User;
 // Imports the tool needed to access the database
 import org.springframework.data.jpa.repository.JpaRepository;
 

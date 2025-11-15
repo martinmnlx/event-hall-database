@@ -1,7 +1,7 @@
-package Service;
+package com.sam.eventhall.Service;
 
-import Model.User;
-import Repository.UserRepository;
+import com.sam.eventhall.Model.User;
+import com.sam.eventhall.Repository.UserRepository;
 // it secures users passwords by making it into a hash
 // plain text -> encrypted version
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

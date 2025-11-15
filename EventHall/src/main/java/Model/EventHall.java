@@ -1,4 +1,4 @@
-package Model;
+package com.sam.eventhall.Model;
 
 // used to help us map this class with the database table
 import jakarta.persistence.*;

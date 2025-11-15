@@ -1,7 +1,7 @@
-package Repository;
+package com.sam.eventhall.Repository;
 
 // imports the Entity for Equipment
-import Model.Equipment;
+import com.sam.eventhall.Model.Equipment;
 // imports the tool needed to access the database
 import org.springframework.data.jpa.repository. JpaRepository;
 // to be able to write our custom SQL

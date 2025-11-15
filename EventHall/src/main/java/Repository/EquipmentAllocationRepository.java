@@ -1,7 +1,7 @@
-package Repository;
+package com.sam.eventhall.Repository;
 
 // Imports the Entity for EquipmentAllocation
-import Model.EquipmentAllocation;
+import com.sam.eventhall.Model.EquipmentAllocation;
 // Imports the tool needed to access the database
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,6 +1,6 @@
-package Repository;
+package com.sam.eventhall.Repository;
 
-import Model.Reservation;
+import com.sam.eventhall.Model.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

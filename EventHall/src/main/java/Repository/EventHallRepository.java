@@ -1,7 +1,7 @@
-package Repository;
+package com.sam.eventhall.Repository;
 
 // Imports the Entity for EventHall
-import Model.EventHall;
+import com.sam.eventhall.Model.EventHall;
 // Imports the tool needed to access the database
 import org.springframework.data.jpa.repository.JpaRepository;
 // Will be used for returning a list of EventHall objects

@@ -1,7 +1,7 @@
-package Service;
+package com.sam.eventhall.Service;
 
-import Model.Staff;
-import Repository.StaffRepository;
+import com.sam.eventhall.Model.Staff;
+import com.sam.eventhall.Repository.StaffRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

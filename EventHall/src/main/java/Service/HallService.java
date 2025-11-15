@@ -1,8 +1,8 @@
-package Service;
+package com.sam.eventhall.Service;
 
-import Model.EventHall;
-import Repository.EventHallRepository;
-import Repository.ReservationRepository;
+import com.sam.eventhall.Model.EventHall;
+import com.sam.eventhall.Repository.EventHallRepository;
+import com.sam.eventhall.Repository.ReservationRepository;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;

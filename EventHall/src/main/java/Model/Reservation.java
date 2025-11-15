@@ -1,4 +1,4 @@
-package Model;
+package com.sam.eventhall.Model;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,7 +1,7 @@
-package Service;
+package com.sam.eventhall.Service;
 
-import Model.Equipment;
-import Repository.EquipmentRepository;
+import com.sam.eventhall.Model.Equipment;
+import com.sam.eventhall.Repository.EquipmentRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
