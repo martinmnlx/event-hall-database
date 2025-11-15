@@ -26,7 +26,6 @@ public class EventHall {
     private String hallName;
     private Integer capacity;
     private String location;
-    private BigDecimal ratePerHour;
 
     // to ensure numerical values will save as string such as Available, Booked, Under_Maintenance
     @Enumerated(EnumType.STRING)

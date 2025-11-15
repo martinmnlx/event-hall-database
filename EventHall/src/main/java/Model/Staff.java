@@ -15,7 +15,5 @@ public class Staff {
 
     private String name;
     private String role;
-    private String department;
     private String contactNumber;
-    private String shiftSchedule;
 }

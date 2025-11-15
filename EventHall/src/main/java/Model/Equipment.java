@@ -16,7 +16,6 @@ public class Equipment {
 
     private String equipmentName;
     private Integer totalQuantity;
-    private BigDecimal rentalRate;
 
 
     @Enumerated(EnumType.STRING)
