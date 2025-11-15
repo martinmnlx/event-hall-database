@@ -27,7 +27,7 @@ public class ReservationService {
     public Reservation createReservation(Reservation reservation, List<EquipmentAllocation> equipmentAllocations) {
 
         // gets the list of available halls
-        List<EventHall> availableEventHalls = hallService.findAvailableHalls(reservation.getEventDate(), reservation.getStartTime(), reservation.getEndTime());
+        List<EventHall> availableEventHalls = hallService.findAvailableHalls(reservation.getStartsOn(), reservation.getEndsOn());
 
         // checks if the requested hallId is available for booking
         boolean isAvailable = false;

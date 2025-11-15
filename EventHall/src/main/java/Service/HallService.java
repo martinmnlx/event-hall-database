@@ -4,8 +4,7 @@ import Model.EventHall;
 import Repository.EventHallRepository;
 import Repository.ReservationRepository;
 import org.springframework.stereotype.Service;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -20,9 +19,9 @@ public class HallService {
         this.reservationRepository = reservationRepository;
     }
 
-    public List<EventHall> findAvailableHalls(LocalDate date, LocalTime start, LocalTime end) {
+    public List<EventHall> findAvailableHalls(LocalDateTime startsOn, LocalDateTime endsOn) {
         // Makes a list of all the halls that are booked
-        List<Integer> conflictHallIds = reservationRepository.findConflictingHallIds(date, start, end);
+        List<Integer> conflictHallIds = reservationRepository.findConflictingHallIds(startsOn, endsOn);
         // makes a list of all the halls that are available
         List<EventHall> availableHalls = eventHallRepository.findByStatus(EventHall.HallStatus.Available);
         // make new list to store the available halls
@@ -36,6 +35,8 @@ public class HallService {
         }
         return unusedHalls;
     }
+
+
     // to have access to all halls (for admin or staff only)
     public List<EventHall> getAllHalls() {
         return eventHallRepository.findAll();
